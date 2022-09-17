@@ -1,5 +1,5 @@
-import type { NextPage } from "next"
-import { Button, Htag } from "../components"
+import type { NextPage } from "next";
+import { Button, Htag, Ptag } from "../components";
 
 const Home: NextPage = (): JSX.Element => {
   return (
@@ -11,8 +11,19 @@ const Home: NextPage = (): JSX.Element => {
       <Button arrow="down" appearance="ghost">
         Кнопка 2
       </Button>
+      <div>
+        <Ptag size="small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fuga.
+        </Ptag>
+        <Ptag size="medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fuga.
+        </Ptag>{" "}
+        <Ptag size="large">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fuga.
+        </Ptag>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
