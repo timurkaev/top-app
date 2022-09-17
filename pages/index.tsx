@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Button, Htag, Ptag } from "../components";
+import { Button, Htag, Ptag, Tag } from "../components";
 
 const Home: NextPage = (): JSX.Element => {
   return (
@@ -21,6 +21,20 @@ const Home: NextPage = (): JSX.Element => {
         <Ptag size="large">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fuga.
         </Ptag>
+      </div>
+      <div>
+        <Tag size="small" color="primary">
+          Маленький Primary
+        </Tag>
+        <Tag size="small" color="ghost">
+          Маленький Ghost
+        </Tag>
+        <Tag size="medium" color="green">
+          Средний Green
+        </Tag>
+        <Tag size="medium" color="grey">
+          Средний Grey
+        </Tag>
       </div>
     </>
   );
