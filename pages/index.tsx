@@ -46,13 +46,6 @@ const Home: NextPage<HomeProps> = ({ menu }): JSX.Element => {
       <div>
         <Rating rating={rating} isEditable={true} setRating={setRating} />
       </div>
-      <div>
-        {menu.map(
-          (el: MenuItem): JSX.Element => (
-            <div key={el._id.secondCategory}>{el._id.secondCategory}</div>
-          ),
-        )}
-      </div>
     </>
   );
 };
